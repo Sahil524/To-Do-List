@@ -1,0 +1,116 @@
+.login-signup-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-signup-container {
+  width: 35%;
+  height: 50%, max-content;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  background: #f0f0f0;
+  transition: 0.3s ease;
+}
+
+.toggle-buttons button.active {
+  background: linear-gradient(90deg, #6c63ff, #836fff);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.4);
+}
+
+/* Form */
+
+.login-signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Input Fields */
+.login-signup-input {
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 36px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.login-signup-input:focus {
+  border: 1px solid #6c63ff;
+  background: #ffffff;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.show-hide-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.show-hide-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Submit Button */
+.login-signup-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #6c63ff, #836fff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-signup-form button[type="submit"]:hover {
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
+}
+
+/* Error Messages */
+.error-text {
+  color: red;
+  font-size: 13px;
+}
