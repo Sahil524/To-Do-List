@@ -11,7 +11,7 @@ from google.genai import types
 app = Flask(__name__)
 CORS(app)
 
-GEMINI_API_KEY = "AIzaSyBb9Vd5WiQs8hgOwi2YnQe-NpfZeOY-PsU"  # set in your env
+GEMINI_API_KEY = ""  # set in your key
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
 def get_db_connection():
